@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_user_analytic_period,account_analytic_period,alq_analytic_distribution.model_account_analytic_period,hr.group_hr_user,1,1,1,1

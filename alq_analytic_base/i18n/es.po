@@ -1,0 +1,27 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* alq_analytic_base
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-16 08:11+0000\n"
+"PO-Revision-Date: 2021-04-16 08:11+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: alq_analytic_base
+#: model_terms:ir.ui.view,arch_db:alq_analytic_base.alq_view_company_analytic_form
+msgid "Analytic Default"
+msgstr "Cuentas analíticas madres en creaciones de nuevos registros"
+
+#. module: alq_analytic_base
+#: model_terms:ir.ui.view,arch_db:alq_analytic_base.alq_view_company_analytic_form
+msgid "Analytics"
+msgstr "Analítica"
+

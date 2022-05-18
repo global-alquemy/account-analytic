@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_account_analytic_account_dist_form" model="ir.ui.view">
+        <field name="name">view.account.analytic.account.dist.form</field>
+        <field name="model">account.analytic.account</field>
+        <field name="inherit_id" ref="analytic.view_account_analytic_account_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="brother_distribution"/>
+                <field name="account_distribution_type"/>
+                <field name="dest_account_distribution_ids" attrs="{'invisible': [('account_distribution_type', '!=', 'src_dist')], 'required': [('account_distribution_type', '=', 'src_dist')]}" widget="many2many_tags" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

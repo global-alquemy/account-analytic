@@ -1,0 +1,8 @@
+/odoo.conf
+/start
+/stop
+/restoredb
+/.idea/
+.vscode/launch.json
+.vscode/sftp.json
+*__pycache__/

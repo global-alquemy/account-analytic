@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_account_analytic_account_period_form" model="ir.ui.view">
+        <field name="name">view.account.analytic.account.period.form</field>
+        <field name="model">account.analytic.account</field>
+        <field name="inherit_id" ref="analytic.view_account_analytic_account_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='code']" position="after">
+                <field name="period_start_id"/>
+                <field name="period_end_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="account_analytic_line_period_form" model="ir.ui.view">
+        <field name="name">account.analytic.line.period.form</field>
+        <field name="model">account.analytic.line</field>
+        <field name="inherit_id" ref="analytic.view_account_analytic_line_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='product_uom_id']" position="after">
+                <field name="period_start_id"/>
+                <field name="period_end_id"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

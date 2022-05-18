@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_account_analytic_account_dist_line_form" model="ir.ui.view">
+        <field name="name">view.account.analytic.account.dist.line.form</field>
+        <field name="model">account.analytic.line</field>
+        <field name="inherit_id" ref="analytic.view_account_analytic_line_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='company_id']" position="after">
+                <field name="distribute_acc_analytic_line_ids" readonly="1" widget="many2many_tags" />
+                <field name="src_distribute_acc_analytic_line_id" readonly="1"/>
+                <field name="distribution_type" readonly="1"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

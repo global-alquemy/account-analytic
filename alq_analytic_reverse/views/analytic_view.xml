@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_account_analytic_reverse_line_form" model="ir.ui.view">
+        <field name="name">view.account.analytic.reverse.line.form</field>
+        <field name="model">account.analytic.line</field>
+        <field name="inherit_id" ref="analytic.view_account_analytic_line_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/group" position="before">
+                <header>
+                    <button name="action_reverse_analytic_line_view" string="Rerverse" type="object" attrs="{'invisible': [('reverse_analytic_line_id','!=', False)]}" groups="account.group_account_invoice"/>
+                </header>
+            </xpath>
+            <xpath expr="//field[@name='currency_id']" position="before">
+                <field name="reverse_analytic_line_id" invisible="0"/>
+                <field name="src_reverse_analytic_line_id" invisible="0"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
+

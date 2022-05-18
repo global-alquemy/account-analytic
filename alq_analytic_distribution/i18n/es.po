@@ -1,0 +1,89 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* alq_analytic_brother_distribution
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-15 00:02+0000\n"
+"PO-Revision-Date: 2021-04-15 00:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: alq_analytic_brother_distribution
+#: model:ir.model.fields,field_description:alq_analytic_brother_distribution.field_account_analytic_account__amount_invoiced
+msgid "Amount Invoiced"
+msgstr "Vol. Facturación"
+
+#. module: alq_analytic_brother_distribution
+#: model:ir.model,name:alq_analytic_brother_distribution.model_account_analytic_account
+msgid "Analytic Account"
+msgstr "Cuenta analítica"
+
+#. module: alq_analytic_brother_distribution
+#: model:ir.model,name:alq_analytic_brother_distribution.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "Línea analítica"
+
+#. module: alq_analytic_brother_distribution
+#: selection:account.analytic.line,distribution_type:0
+msgid "Brother Account"
+msgstr "Cuenta Hermana"
+
+#. module: alq_analytic_brother_distribution
+#: model:ir.model.fields,field_description:alq_analytic_brother_distribution.field_account_analytic_account__brother_distribution
+msgid "Brother Distribution"
+msgstr "Distribución entre cuentas de la misma madre"
+
+#. module: alq_analytic_brother_distribution
+#: model:ir.model.fields,field_description:alq_analytic_brother_distribution.field_account_analytic_line__distribute_acc_analytic_line_ids
+msgid "Distribute Account Analytic Line"
+msgstr "Apuntes analítico distribución"
+
+#. module: alq_analytic_brother_distribution
+#: model:ir.model.fields,field_description:alq_analytic_brother_distribution.field_account_analytic_line__distribution_type
+msgid "Distribution Type"
+msgstr "Tipo de Distribución"
+
+#. module: alq_analytic_brother_distribution
+#: model:ir.model.fields,field_description:alq_analytic_brother_distribution.field_account_analytic_account__is_leaf
+msgid "Is Leaf"
+msgstr "Es hoja"
+
+#. module: alq_analytic_brother_distribution
+#: model:ir.model.fields,field_description:alq_analytic_brother_distribution.field_account_analytic_line__is_reverse_distribution
+msgid "Is Reverse by Distribution"
+msgstr "Es reversión de distribución"
+
+#. module: alq_analytic_brother_distribution
+#: selection:account.analytic.line,distribution_type:0
+msgid "Payroll"
+msgstr "Nóminas"
+
+#. module: alq_analytic_brother_distribution
+#: model:ir.actions.server,name:alq_analytic_brother_distribution.process_analytical_cast_ir_actions_server
+#: model:ir.cron,cron_name:alq_analytic_brother_distribution.process_analytical_cast
+#: model:ir.cron,name:alq_analytic_brother_distribution.process_analytical_cast
+msgid "Reparto Analítico"
+msgstr ""
+
+#. module: alq_analytic_brother_distribution
+#: selection:account.analytic.line,distribution_type:0
+msgid "Specific Account"
+msgstr "Cuenta Específica"
+
+#. module: alq_analytic_brother_distribution
+#: model:ir.model.fields,field_description:alq_analytic_brother_distribution.field_account_analytic_line__src_distribute_acc_analytic_id
+msgid "Src Distribute Account Analytic"
+msgstr "Cuenta analítica origen distribución"
+
+#. module: alq_analytic_brother_distribution
+#: model:ir.model.fields,field_description:alq_analytic_brother_distribution.field_account_analytic_line__src_distribute_acc_analytic_line_id
+msgid "Src Distribute Account Analytic Line"
+msgstr "Apunte analítico origen distribución"
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="process_analytical_cast" model="ir.cron">
+        <field name="name">Reparto Analítico</field>
+        <field name="model_id" ref="model_account_analytic_line"/>
+        <field name="state">code</field>
+        <field name="code">model.generate_analytical_cast()</field>
+        <field name='interval_type'>days</field>
+        <field name="interval_number">1</field>
+        <field name="nextcall" eval="(datetime.utcnow() + timedelta(days=1)).strftime('%Y-%m-%d 14:00:00')"/>
+        <field name="numbercall">-1</field>
+        <field name="active" eval="False"/>
+    </record>
+    <record id="process_delete_analytical_cast" model="ir.cron">
+        <field name="name">Borrar Reparto Analítico</field>
+        <field name="model_id" ref="model_account_analytic_line"/>
+        <field name="state">code</field>
+        <field name="code">model.delete_analytical_cast()</field>
+        <field name='interval_type'>days</field>
+        <field name="interval_number">1</field>
+        <field name="nextcall" eval="(datetime.utcnow() + timedelta(days=1)).strftime('%Y-%m-%d 14:00:00')"/>
+        <field name="numbercall">-1</field>
+        <field name="active" eval="False"/>
+    </record>
+</odoo>
